@@ -1,0 +1,46 @@
+<html>
+<head></head>
+<body>
+    <div></div>
+    <div></div>
+</body>
+</html>
+
+
+<style>
+
+body{
+    background-color: red;
+}
+
+div{
+    width: 100%;
+    background-color: honeydew;
+    height: 150px;
+}
+div:nth-child(2){
+    width: 100%;
+    background-color: brown;
+    height: 150px;
+}
+
+@media (min-width: 768px){
+    body {
+        background-color: green;
+    }
+}
+@media (min-width: 1024px){
+    body {
+        background-color: blue;
+    }
+    div, div:nth-child(2){
+        width: 50%;
+        float: left;
+    }
+}
+@media (min-width: 1440px){
+    body {
+        background-color: purple;
+    }
+}
+</style>
